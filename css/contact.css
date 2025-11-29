@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.navbar {
+    width: 100%;
+    padding: 20px 50px;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #7b4dbb;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+}
+
+.nav-links a.active {
+    color: #7b4dbb;
+    font-weight: 600;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 25px;
+    font-size: 18px;
+    color: #444;
+}
+
+
+.container {
+    height: 70vh;
+    background: url("/mnt/data/d002bfb9-b69b-41a7-a458-3b129f5bb3e3.jpg") center/cover no-repeat;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    max-width: 100%;
+}
+
+.container h1 {
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 3px 10px black;
+}
+
+
+.contact-container {
+    display: flex;
+    width: 100%;
+    padding: 40px 60px;
+    gap: 40px;
+}
+
+
+.contact-box {
+    width: 50%;
+    border: 1px solid #ccc;
+    padding: 30px;
+}
+
+.contact-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.contact-box label {
+    font-size: 14px;
+    margin: 10px 0 5px;
+    display: block;
+}
+
+.contact-box input,
+.contact-box textarea  {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.contact-box textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact-box button {
+    background: #7b1fa2;
+    padding: 12px 20px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-box button:hover {
+    background: #5a0f7c;
+}
+
+
+.map-image img {
+    width: 100vh;
+    height: 580px;
+
+    border: 1px solid #ccc;
+    object-fit: cover;
+}
+
+
+.faq-section {
+    padding: 40px 60px;
+}
+
+.faq-section h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.faq-category {
+    margin-bottom: 40px;
+}
+
+.faq-category h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+details {
+    border: 1px solid #ccc;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+summary {
+    cursor: pointer;
+    font-size: 15px;
+}
+
+details p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+.footer {
+    background: #050505;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #d7c4ef;
+    margin-bottom: 30px;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.footer-col h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer-col ul li {
+    list-style: none;
+    margin-bottom: 18px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #6a3f3f;
+}
+
+.footer-col p {
+    color: #ccc;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.social-icons a {
+    margin-right: 12px;
+    font-size: 20px;
+    color: #ccc;
+    
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+.newsletter {
+    display: flex;
+    margin-top: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 65%;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background: #b287f4;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: 0.3s;
+}
+
+.newsletter button:hover {
+    background: #8a5ad6;
+}
+@media (max-width: 320px) {
+
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        display: none; 
+    }
+
+    .nav-icons {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    
+    .container {
+        height: 40vh;
+        padding-left: 20px;
+    }
+
+    .container h1 {
+        font-size: 32px;
+    }
+
+    
+    .contact-container {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .contact-box {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .contact-box h2 {
+        font-size: 18px;
+    }
+
+    .contact-box input,
+    .contact-box textarea {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .contact-box button {
+        width: 100%;
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    
+    .map-image img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    
+    .faq-section {
+        padding: 20px;
+    }
+
+    .faq-section h2 {
+        font-size: 22px;
+    }
+
+    .faq-category h3 {
+        font-size: 16px;
+    }
+
+    summary {
+        font-size: 14px;
+    }
+
+    details {
+        padding: 10px;
+    }
+
+
+    .footer {
+        padding: 30px 0;
+    }
+
+    .footer-logo h2 {
+        font-size: 25px;
+    }
+
+    .footer-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-col h3 {
+        font-size: 16px;
+    }
+
+    .footer-col p,
+    .footer-col ul li a {
+        font-size: 13px;
+    }
+
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .newsletter input {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .newsletter button {
+        width: 100%;
+        border-radius: 5px;
+    }
+}
